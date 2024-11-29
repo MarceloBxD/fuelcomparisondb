@@ -1,0 +1,24 @@
+{
+  "name": "fuelcomparisondb",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --env-file=.env src/index.js",
+    "start": "node src/index.js",
+    "prisma": "npx prisma",
+    "prisma:dev": "dotenv -e .env -- npx prisma migrate dev --name init"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7",
+    "prisma": "^5.22.0"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^7.4.4"
+  }
+}
